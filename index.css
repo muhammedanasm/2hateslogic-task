@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --font-family-primary: "Nunito", serif;
+  --navlinkcolor: "#838383";
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background: #fff;
+}
+.container {
+  max-width: 1370px;
+}
+.homePage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.base {
+  height: 100vh;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.logo img {
+  width: 45px;
+}
+.navbar {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 20px 50px 20px 0px;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks p {
+  color: var(--navlinkcolor);
+  font-weight: 400;
+  cursor: pointer;
+}
+.navlinks p:hover {
+  color: #0f0f0f;
+}
+.banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+}
+.banners img {
+  max-width: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.users {
+  background-image: url(./assets/bgright.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.right-section {
+  background: #f1f6fe;
+  border-left: 1px solid #bed5fa;
+  z-index: 9;
+  height: 100vh;
+}
+.banner {
+  margin-top: 40px;
+  position: relative;
+}
+.banner p {
+  color: #2d3134;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.banner h2 {
+  color: #151515;
+  font-size: 54px;
+  font-weight: 700;
+}
+.banner img {
+  position: absolute;
+  top: 32%;
+  right: 36%;
+  max-width: 45px;
+}
+.follow {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.follow p:nth-child(2) {
+  color: #202020;
+  font-weight: 400;
+}
+.count {
+  color: #000;
+  font-size: 28px;
+  font-weight: 400;
+}
+.students-photo {
+  position: relative;
+}
+.students-photo img {
+  max-width: 80px;
+}
+.std2 {
+  position: absolute;
+  left: 51%;
+}
+.std3 {
+  position: absolute;
+  left: 98%;
+}
+.left-section {
+  overflow: hidden;
+}
+.suucess-story h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+}
+.suucess-story p {
+  color: #fff;
+  font-weight: 400;
+}
+/* Hover effect */
+.banners img:hover {
+  transform: scale(1.1);
+
+  cursor: pointer;
+}
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background: #ff9257;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  padding-left: 100px;
+}
+.suucess-story {
+  border-left: 3px solid #f7be2c;
+  padding-left: 20px;
+}
+.book-seat {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.journy img {
+  max-width: 45px;
+}
+.journy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.book-seat button {
+  background: #2f584e;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    /* margin-right: auto; */
+  }
+}
