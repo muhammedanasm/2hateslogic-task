@@ -192,6 +192,13 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
+.line {
+  position: absolute;
+  left: 0%;
+  top: 0px;
+  max-width: 1266px;
+  z-index: 0;
+}
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
