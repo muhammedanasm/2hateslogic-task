@@ -22,7 +22,7 @@ body {
   background: #fff;
 }
 .container {
-  max-width: 1370px;
+  max-width: 1300px;
 }
 .homePage {
   display: grid;
@@ -71,7 +71,9 @@ body {
   padding: 30px;
 }
 .banners img {
-  max-width: 240px;
+  /* max-width: 240px; */
+  width: 100%;
+  height: 177px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .users {
@@ -198,6 +200,7 @@ body {
   top: 0px;
   max-width: 1266px;
   z-index: 0;
+  height: 100vh;
 }
 @media screen and (min-width: 1024px) {
   .container {
